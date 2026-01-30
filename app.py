@@ -54,7 +54,7 @@ def home_page():
     st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #FF0080 0%, #7928CA 50%, #FF0080 100%);
         animation: fadeIn 1s ease-in;
     }
     @keyframes fadeIn {
@@ -78,7 +78,7 @@ def home_page():
         color: white !important;
     }
     .stButton > button {
-        background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        background: linear-gradient(135deg, #00FF88, #00D4FF);
         border: none;
         color: white !important;
         font-size: 18px;
@@ -92,7 +92,7 @@ def home_page():
     .stButton > button:hover {
         transform: translateY(-5px) scale(1.1);
         box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-        background: linear-gradient(135deg, #ff5252, #d84315);
+        background: linear-gradient(135deg, #00E676, #00B0FF);
     }
     .stColumns > div {
         background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
@@ -153,7 +153,7 @@ def home_page():
     .stat-number {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #ff6b6b;
+        color: #00FF88;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         animation: bounce 3s infinite;
     }
@@ -247,6 +247,13 @@ def home_page():
     if st.button("🚀 Start Prediction", type="primary", use_container_width=True):
         st.session_state.page = 'Symptoms'
         st.rerun()
+    
+    # Footer
+    st.markdown("""
+    <div style="text-align: center; margin-top: 50px; padding: 20px; opacity: 0.9;">
+        <p style="font-size: 18px; color: #00FF88; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Created by Ayesha ✨</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 def symptoms_page():
     """Symptoms selection page"""
@@ -718,20 +725,22 @@ def recommendations_page():
     st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-        color: #333;
+        background: linear-gradient(135deg, #9C27B0 0%, #673AB7 50%, #3F51B5 100%);
+        color: white;
     }
     .stMarkdown, .stText {
-        color: #333 !important;
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
     .stButton > button {
-        background-color: rgba(51,51,51,0.1);
-        border: 1px solid #333;
-        color: #333 !important;
+        background-color: rgba(255,255,255,0.2);
+        border: 2px solid white;
+        color: white !important;
     }
     .stInfo {
-        background-color: rgba(51,51,51,0.1);
-        color: #333;
+        background-color: rgba(255,255,255,0.2);
+        color: white !important;
+        border: 1px solid rgba(255,255,255,0.3);
     }
     .stColumns > div {
         background-color: rgba(255,255,255,0.3);
