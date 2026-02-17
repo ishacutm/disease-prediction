@@ -186,15 +186,15 @@ def home_page():
     st.markdown("""
     <div class="stats-container">
         <div class="stat-item">
-            <div class="stat-number">15</div>
+            <div class="stat-number">20</div>
             <div>Diseases Covered</div>
         </div>
         <div class="stat-item">
-            <div class="stat-number">25</div>
+            <div class="stat-number">32</div>
             <div>Symptoms Analyzed</div>
         </div>
         <div class="stat-item">
-            <div class="stat-number">70%</div>
+            <div class="stat-number">67%</div>
             <div>Accuracy Rate</div>
         </div>
     </div>
