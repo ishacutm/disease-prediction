@@ -8,7 +8,14 @@ import json
 
 class DiseasePredictor:
     def __init__(self):
-        self.model = RandomForestClassifier(n_estimators=100, random_state=42)
+        self.model = RandomForestClassifier(
+            n_estimators=200,
+            max_depth=15,
+            min_samples_split=5,
+            min_samples_leaf=2,
+            random_state=42,
+            class_weight='balanced'
+        )
         self.feature_names = None
         self.disease_names = None
         
